@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Page break rules for clean multi-grid printing */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    .print-only {
+      display: block !important;
+    }
+    .page-break-before {
+      page-break-before: always;
+      break-before: page;
+    }
+    .page-break-after {
+      page-break-after: always;
+      break-after: page;
+    }
+    .avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    body {
+      background: white !important;
+      color: black !important;
+      font-size: 12pt;
+    }
+    @page {
+      margin: 12mm 12mm 14mm 12mm;
+      size: A4 portrait;
+    }
+  }
+
+  @media screen {
+    .print-only {
+      display: none !important;
+    }
+  }
+}
+

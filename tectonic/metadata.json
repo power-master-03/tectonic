@@ -1,0 +1,6 @@
+{
+  "name": "Suguru Kemaru Tectonic Generator & Solver",
+  "description": "Generate, solve, play, and batch print Kemaru / Suguru / Tectonic logic puzzles with difficulty verification, PDF export, and user profile progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
